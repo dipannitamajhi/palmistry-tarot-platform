@@ -19,6 +19,3 @@ Built as an 8-week internship project for **Infosys Springboard**.
 
 
 
-## License
-
-This project was built for educational purposes as part of an Infosys Springboard internship.
