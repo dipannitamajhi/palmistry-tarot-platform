@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 model = YOLO('models/best.pt')
-results = model.predict('test_image.jpg', conf=0.1, save=False)
+results = model.predict('test_images/test_image.jpg', conf=0.1, save=False)
 
 for r in results:
     print(f"Found {len(r.boxes)} detections")
