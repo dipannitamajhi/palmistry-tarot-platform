@@ -1,0 +1,23 @@
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-multipart==0.0.9
+opencv-python-headless==4.10.0.84
+numpy==1.26.4
+pydantic==2.7.4
+python-dotenv==1.0.1
+openai==1.35.0
+sqlalchemy==2.0.30
+passlib==1.7.4
+bcrypt==4.0.1
+python-jose[cryptography]==3.3.0
+email-validator==2.1.1
+psycopg2-binary==2.9.9
+fpdf2==2.7.9
+openpyxl==3.1.5
+
+# Needed for the trained palm-line detection model (models/best.pt).
+# Without this, app/services/palm_line_detector.py will crash with
+# "No module named 'ultralytics'" as soon as someone uploads a palm photo,
+# because it tries to load the YOLO model. This was commented out before,
+# which is why it only worked on the original dev machine.
+ultralytics==8.4.121

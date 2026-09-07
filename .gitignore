@@ -1,0 +1,27 @@
+# Virtual environments
+.venv/
+venv/
+.venv-ai/
+*/.venv/
+*/venv/
+
+# Node
+node_modules/
+*/node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# Secrets
+.env
+
+# Large training data/outputs — don't commit these
+dataset/
+runs/
+palmistry-1/
+palmistry-3/
+yolo26n.pt
